@@ -63,7 +63,7 @@ Disable middleware
 ```
 // $routes->applyMiddleware('csrf');
 ```
-Or leave it enabled and create new scope for /saml
+Or leave it enabled and create new scope for /saml with out the csrf middleware set.
 ```
 Router::scope('/saml', function (RouteBuilder $routes) {
     $routes->connect('/:action', ['controller' => 'Saml']);
