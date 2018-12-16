@@ -19,8 +19,9 @@ You login button or anyother way to login to the site you should append to the u
 after the ?authenticate=google
 
 so
+```
 <a href="/orders?authenticate=google">Go to Orders</a>
-
+```
 will take users to /orders but before will authenticate via google SAML app
 
 
@@ -31,7 +32,7 @@ simplesamlphp/simplesamlphp
 
 # Controllers/AppController to apply to all Conrollers
 Create a AppController to add to all site 
-
+```
 class AppController extends Controller
 {
 
@@ -55,15 +56,17 @@ class AppController extends Controller
     }
 
 }
-
+```
 # TBC: config/routes.php (: Does it a must?) - disable middleware
 
 Disable middleware
+```
 // $routes->applyMiddleware('csrf');
-
+```
 Or leave it enabled and create new scope for /saml
-
+```
 Router::scope('/saml', function (RouteBuilder $routes) {
     $routes->connect('/:action', ['controller' => 'Saml']);
     $routes->fallbacks(DashedRoute::class);
 });
+```
