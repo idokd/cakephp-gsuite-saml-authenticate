@@ -7,7 +7,9 @@ you should configure in admin.google.com your SAML APPS,
 Setting the following;
 
 ACS URL: https://{domain-name}/saml
+
 Entity ID / Entity ID (Issuer / App): {google-app-entity-id}
+
 Start URL: https://{domain-name} 
 
 Download your google certificate, and enable users to this SAML Apps so you can test it
