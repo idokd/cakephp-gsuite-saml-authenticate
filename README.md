@@ -4,13 +4,13 @@ G Suite / Google Authentication via SAML Apps &amp; SimpleSAML PHP / SAML2
 The following code will enable your CakePHP (v3+) to integrate a login via Google Suite / Google Apps
 you should configure in admin.google.com your SAML APPS,
 
-Setting the following;
+Setting the following; (check google help here: https://support.google.com/a/answer/6087519?hl=en)
 
-ACS URL: https://{domain-name}/saml
-
-Entity ID / Entity ID (Issuer / App): {google-app-entity-id}
-
-Start URL: https://{domain-name} 
+> ACS URL: https://{domain-name}/saml
+>
+> Entity ID / Entity ID (Issuer / App): {google-app-entity-id}
+>
+> Start URL: https://{domain-name} 
 
 Download your google certificate, and enable users to this SAML Apps so you can test it
 
