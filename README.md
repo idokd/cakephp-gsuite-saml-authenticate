@@ -1,4 +1,4 @@
-# cakephp-gsuite-saml
+# cakephp-gsuite-saml-authenticate
 G Suite / Google Authentication via SAML Apps &amp; SimpleSAML PHP / SAML2
 
 The following code will enable your CakePHP (v3+) to integrate a login via Google Suite / Google Apps
