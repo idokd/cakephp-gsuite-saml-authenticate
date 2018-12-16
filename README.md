@@ -27,8 +27,8 @@ will take users to /orders but before will authenticate via google SAML app
 
 # Add packages in composer
 You will need the following two packages:
-simplesamlphp/saml2
-simplesamlphp/simplesamlphp
+- simplesamlphp/saml2
+- simplesamlphp/simplesamlphp
 
 # Controllers/AppController to apply to all Conrollers
 Create a AppController to add to all site 
